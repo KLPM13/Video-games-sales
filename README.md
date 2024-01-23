@@ -7,6 +7,7 @@
  group by Platform
 
  order by count(platform) desc;
+
  
 --What type of game genre have the most highest critic score?
 
@@ -18,6 +19,7 @@
 
  order by genre_avg_critic_score desc;
 
+
 --what company have the highest total global sales?
 
  SELECT publisher, sum(Global_Sales)
@@ -27,6 +29,7 @@
  group by Publisher
 
  order by sum(Global_Sales) desc;
+
 
 --Top 5 games on North america
 
@@ -38,6 +41,7 @@
 
  limit 5;
 
+
 --Does rating affect the total sales?
 
  select sum(Global_Sales) as Total_sales, rating
@@ -47,6 +51,7 @@
  where rating is not null
 
  group by rating;
+
 
 --what publisher have the most user
 
